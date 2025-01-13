@@ -1,0 +1,434 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @keyframes textAnimation {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        50% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+      }
+
+      .animate-text {
+        animation: textAnimation 3s infinite;
+      }
+  </style>
+  <title>
+   Portfolio
+  </title>
+ </head>
+ <body class="bg-gray-100 text-gray-900">
+  <header class="bg-white shadow-md">
+   <div class="container mx-auto flex justify-between items-center p-4">
+    <div class="text-2xl font-bold">
+     <a href="/">
+      Portfolio
+     </a>
+    </div>
+    <nav class="hidden md:flex space-x-4">
+     <a class="hover:text-blue-500" href="#">
+      Home
+     </a>
+     <a class="hover:text-blue-500" href="#about">
+      About
+     </a>
+     <a class="hover:text-blue-500" href="#skill">
+      Skill
+     </a>
+     <a class="hover:text-blue-500" href="#project">
+      Project
+     </a>
+     <a class="hover:text-blue-500" href="#contact">
+      Contact
+     </a>
+    </nav>
+    <div class="hidden md:block">
+     <button class="bg-blue-500 text-white px-4 py-2 rounded">
+      Get In Touch
+     </button>
+    </div>
+    <div class="md:hidden" id="menu">
+     <i class="fas fa-bars text-2xl">
+     </i>
+    </div>
+   </div>
+   <div class="hidden md:hidden bg-white shadow-md" id="nav-mobile">
+    <ul class="space-y-4 p-4">
+     <li>
+      <a class="nav-link" href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="nav-link" href="#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="nav-link" href="#skill">
+       Skill
+      </a>
+     </li>
+     <li>
+      <a class="nav-link" href="#project">
+       Project
+      </a>
+     </li>
+     <li>
+      <a class="nav-link" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero bg-gradient-to-r from-blue-500 to-purple-500 text-white py-20">
+   <div class="container mx-auto text-center">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-text">
+     Dwi Rahmawati
+    </h1>
+    <p class="text-xl md:text-2xl">
+     Delivering Custom Frontend Solutions that
+     <span class="text-yellow-300">
+      Stand Out
+     </span>
+    </p>
+   </div>
+  </section>
+  <section class="about py-20" id="about">
+   <div class="container mx-auto">
+    <h1 class="text-3xl md:text-4xl font-bold text-center mb-8">
+     About Me
+    </h1>
+    <div class="flex flex-col md:flex-row items-center">
+     <div class="md:w-1/3 mb-8 md:mb-0">
+      <img alt="Profile picture of Dwi Rahmawati" class="rounded-full mx-auto shadow-lg" src="profil.png"/>
+     </div>
+     <div class="md:w-2/3 md:pl-8">
+      <p class="text-lg leading-relaxed">
+       Let me introduce myself, my name is Dwi Rahmawati, I live in West
+              Kalimantan.
+       <br/>
+       I went to school at:
+       <br/>
+       - TK broke through
+       <br/>
+       - SDN 15 broke through
+       <br/>
+       - Takhassus Al-Qur'an Ngabang Middle School
+       <br/>
+       - Takhassus Al-Qur'an Ngabang High School
+       <br/>
+       - Wonosobo Al-Qur'an Science University.
+       <br/>
+       My place of birth is Purworejo, twenty ninth December two thousand
+              and four.
+       <br/>
+       At the Al-Qur'an Science University I majored in informatics
+              engineering.
+       <br/>
+       <br/>
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="skill py-20 bg-gray-200" id="skill">
+   <div class="container mx-auto">
+    <h1 class="text-3xl md:text-4xl font-bold text-center mb-8">
+     Skill
+    </h1>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+     <div class="flex justify-center">
+      <div class="text-center">
+       <i class="fab fa-html5 text-6xl text-orange-600">
+       </i>
+       <p class="mt-2">
+        HTML5
+       </p>
+      </div>
+     </div>
+     <div class="flex justify-center">
+      <div class="text-center">
+       <i class="fab fa-css3-alt text-6xl text-blue-600">
+       </i>
+       <p class="mt-2">
+        CSS3
+       </p>
+      </div>
+     </div>
+     <div class="flex justify-center">
+      <div class="text-center">
+       <i class="fab fa-js text-6xl text-yellow-500">
+       </i>
+       <p class="mt-2">
+        JavaScript
+       </p>
+      </div>
+     </div>
+     <div class="flex justify-center">
+      <div class="text-center">
+       <i class="fab fa-react text-6xl text-blue-500">
+       </i>
+       <p class="mt-2">
+        React
+       </p>
+      </div>
+     </div>
+     <div class="flex justify-center">
+      <div class="text-center">
+       <i class="fas fa-database text-6xl text-blue-800">
+       </i>
+       <p class="mt-2">
+        MySQL
+       </p>
+      </div>
+     </div>
+     <div class="flex justify-center">
+      <div class="text-center">
+       <i class="fab fa-figma text-6xl text-purple-600">
+       </i>
+       <p class="mt-2">
+        Figma
+       </p>
+      </div>
+     </div>
+     <div class="flex justify-center">
+      <div class="text-center">
+       <i class="fab fa-github text-6xl text-gray-800">
+       </i>
+       <p class="mt-2">
+        GitHub
+       </p>
+      </div>
+     </div>
+     <div class="flex justify-center">
+      <div class="text-center">
+       <i class="fab fa-cuttlefish text-6xl text-blue-600">
+       </i>
+       <p class="mt-2">
+        C++
+       </p>
+      </div>
+     </div>
+     <div class="flex justify-center">
+      <div class="text-center">
+       <i class="fab fa-python text-6xl text-yellow-500">
+       </i>
+       <p class="mt-2">
+        Python
+       </p>
+      </div>
+     </div>
+     <div class="flex justify-center">
+      <div class="text-center">
+       <i class="fab fa-java text-6xl text-red-600">
+       </i>
+       <p class="mt-2">
+        Java
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="project py-20" id="project">
+   <div class="container mx-auto">
+    <h1 class="text-3xl md:text-4xl font-bold text-center mb-8">
+     Project
+    </h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img alt="Screenshot of Aplikasi penjualan barang second project" class="w-full" src="project1.png"/>
+      <div class="p-4">
+       <h2 class="text-xl font-bold mb-2">
+        Aplikasi penjualan barang second
+       </h2>
+       <p class="text-gray-700 mb-4">
+        This application is useful for selling second hand goods
+       </p>
+       <a class="text-blue-500 hover:underline" href="https://www.figma.com/proto/h8Y1HariEurdiBDmihmKMT/Untitled?page-id=0%3A1&amp;node-id=23-71&amp;viewport=-677%2C-593%2C0.46&amp;t=OGKrNfW3DXPLAJhx-1&amp;scaling=scale-down&amp;content-scaling=fixed">
+        See More
+       </a>
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img alt="Screenshot of Laravel project" class="w-full" src="project2.png"/>
+      <div class="p-4">
+       <h2 class="text-xl font-bold mb-2">
+        Laravel
+       </h2>
+       <p class="text-gray-700 mb-4">
+        laravel inertia using react
+       </p>
+       <a class="text-blue-500 hover:underline" href="#">
+        See More
+       </a>
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img alt="Screenshot of Novaspace project" class="w-full" src="https://placehold.co/400x300"/>
+      <div class="p-4">
+       <h2 class="text-xl font-bold mb-2">
+        Novaspace
+       </h2>
+       <p class="text-gray-700 mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                voluptas eaque enim soluta blanditiis velit quisquam delectus
+                reiciendis debitis laboriosam.
+       </p>
+       <button class="bg-blue-500 text-white px-4 py-2 rounded">
+        Demo
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="contact py-20 bg-gray-200" id="contact">
+   <div class="container mx-auto">
+    <h1 class="text-3xl md:text-4xl font-bold text-center mb-8">
+     Contact
+    </h1>
+    <form class="max-w-lg mx-auto bg-white p-8 shadow-md rounded-lg">
+     <div class="mb-4">
+      <input class="w-full p-2 border border-gray-300 rounded" placeholder="Name..." type="text"/>
+     </div>
+     <div class="mb-4">
+      <input class="w-full p-2 border border-gray-300 rounded" placeholder="Email..." type="email"/>
+     </div>
+     <div class="mb-4">
+      <input class="w-full p-2 border border-gray-300 rounded" placeholder="Phone..." type="number"/>
+     </div>
+     <div class="mb-4">
+      <input class="w-full p-2 border border-gray-300 rounded" placeholder="Subject..." type="text"/>
+     </div>
+     <div class="mb-4">
+      <textarea class="w-full p-2 border border-gray-300 rounded" name="message" placeholder="Message..."></textarea>
+     </div>
+     <button class="bg-blue-500 text-white px-4 py-2 rounded">
+      Send
+     </button>
+    </form>
+   </div>
+  </section>
+  <footer class="bg-white py-8">
+   <div class="container mx-auto text-center">
+    <h1 class="text-2xl font-bold mb-4">
+     Social Media
+    </h1>
+    <div class="flex justify-center space-x-4 mb-8">
+     <a href="https://www.instagram.com/dwierahmah/profilecard/?igsh=eDk2a2JvZjJkajdl">
+      <i class="fab fa-instagram text-2xl text-gray-700 hover:text-blue-500">
+      </i>
+     </a>
+     <a href="https://wa.me/qr/XHY3WFCL5KAOD1">
+      <i class="fab fa-whatsapp text-2xl text-gray-700 hover:text-blue-500">
+      </i>
+     </a> 
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <div>
+      <h2 class="text-xl font-bold mb-2">
+       Skill
+      </h2>
+      <ul class="space-y-2">
+       <li>
+        <a class="hover:underline" href="#">
+         HTML
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         MySQL
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         CSS3
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         JavaScript
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         React
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h2 class="text-xl font-bold mb-2">
+       Technology
+      </h2>
+      <ul class="space-y-2">
+       <li>
+        <a class="hover:underline" href="#">
+         Figma
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         GitHub
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h2 class="text-xl font-bold mb-2">
+       Navigation
+      </h2>
+      <ul class="space-y-2">
+       <li>
+        <a class="hover:underline" href="#">
+         Home
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         About
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Skill
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Project
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Contact
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script>
+   document.getElementById("menu").addEventListener("click", function () {
+        document.getElementById("nav-mobile").classList.toggle("hidden");
+      });
+  </script>
+ </body>
+</html>
